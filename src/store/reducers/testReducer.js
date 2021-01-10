@@ -8,7 +8,7 @@ const initialState = {
 
 const increaseCounter = (state, action) => {
   return updateObject(state, {
-    counter: action.value + state.counter,
+    counter: parseInt(state.counter) + parseInt(action.value),
   });
 };
 
