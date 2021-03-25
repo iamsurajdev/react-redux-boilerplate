@@ -1,0 +1,10 @@
+@import "./global/colors";
+@import "./global/mixins";
+@import "./global/typography";
+@import "./global/variables";
+
+.btn {
+  background-color: $SecondThemeColor;
+  padding: 30px;
+  margin: 50;
+}
