@@ -2,12 +2,12 @@ import React from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
 
-const Base = (props) => {
+const Base = ({ header, footer, children }) => {
   return (
     <>
-      <Header />
-      {props.children}
-      <Footer />
+      {header && <Header />}
+      {children}
+      {footer && <Footer />}
     </>
   );
 };
